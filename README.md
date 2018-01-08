@@ -18,10 +18,17 @@ Convert the following designs to HTML/CSS/JS.
 6. Make the page the smallest possible size - ensure that images are properly optimized, resources minified, etc.
 7. Make semantic, small sized commits of the changes you've made. Make sure each commit expressed the changes you've made. Avoid single large commits if possible.
 
-## Installation
+## Installation 
+
 1. cd to `app`
 2. run `npm install` or `yarn install`
 3. run `gulp serve` to start developing
+
+## Submission
+
+1. Create a fork of the repository on your own github account, all your changes can be pushed there.
+2. Create a branch with your name as the branch name (Eg: `master -> master-felipe, master-arturo, etc`)
+3. When you are finished, create a pull request to the main source repository. Then i'll review your work.
 
 ## Download PSD
 [xfive-front-end-test.zip](xfive-front-end-test.zip?raw=true) (24MB)
