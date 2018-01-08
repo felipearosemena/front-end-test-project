@@ -45,7 +45,7 @@ Ensure that the elements work and display correctly in the following browsers:
 When working on the project use consistent coding style. Try to follow what's already defined in Chisel (EditorConfig, stylelint, ESLint). You can also check guidelines like [Code Guide](http://codeguide.co/) or [CSS Guidelines](http://cssguidelin.es/).
 
 ## Project Deadline
-Do your best to complete the project, but limit your time to 4-6 hours. At very least I want to see samples of your code on each of the 3 languages (HTML, CSS & JS).
+Do your best to complete the project, but limit your time to 4-6 hours. At very least I want to see samples of your code on each of the 3 languages (HTML, CSS & JS). Remember KISS (Keep it simple, stupid)
 
 ## Quality Assurance
 
@@ -54,7 +54,6 @@ What you need to do to get high QA score? Simply answer **Yes** to all these que
 ### General
 
 - Are all requirements set above met?
-- Can the project be built using `npm run build`?
 - Is the page working without any JS errors?
 
 ### Precision
