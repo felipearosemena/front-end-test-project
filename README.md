@@ -45,7 +45,7 @@ Ensure that the elements work and display correctly in the following browsers:
 When working on the project use consistent coding style. Try to follow what's already defined in Chisel (EditorConfig, stylelint, ESLint). You can also check guidelines like [Code Guide](http://codeguide.co/) or [CSS Guidelines](http://cssguidelin.es/).
 
 ## Project Deadline
-Take your time but try to deliver it within 2 weeks time. If we don't see any activity in your test repository after 2 weeks (at least initial commits), we will automatically withdraw your application.
+Do your best to complete the project, but limit your time to 4-6 hours. At very least I want to see samples of your code on each of the 3 languages (HTML, CSS & JS).
 
 ## Quality Assurance
 
