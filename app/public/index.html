@@ -30,24 +30,31 @@
   <div class="row">
     <div class="col-sm-6">
     <a href = "javascript:void(0)" onclick = "document.getElementById('primero').style.display='block';document.getElementById('fade').style.display='block'">
-        <img src="img/new-zealand-3.jpg" class="img-fluid" alt="Responsive image">
+        <img src="img/new-zealand-3.jpg" class="img-fluid circulo" alt="Responsive image">
     </a>
     </div>
     <div class="col-sm-6">
     <a href = "javascript:void(0)" onclick = "document.getElementById('segundo').style.display='block';document.getElementById('fade').style.display='block'">
-        <img src="img/new-zealand-1.jpg" class="img-fluid" alt="Responsive image">
+        <img src="img/new-zealand-1.jpg" class="img-fluid cuadrado" alt="Responsive image">
     </a>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-6">
     <a href = "javascript:void(0)" onclick = "document.getElementById('tercero').style.display='block';document.getElementById('fade').style.display='block'">
-        <img src="img/new-zealand-2.jpg" class="img-fluid" alt="Responsive image">
+        <img src="img/new-zealand-2.jpg" class="img-fluid rectangulo" alt="Responsive image">
     </a>
     </div>
     <div class="col-sm-6">
     <a href = "javascript:void(0)" onclick = "document.getElementById('cuarto').style.display='block';document.getElementById('fade').style.display='block'">
-        <img src="img/new-zealand-4.jpg" class="img-fluid" alt="Responsive image">
+    <svg viewbox="0 0 10 6.7">
+  <defs>
+    <clipPath id="top">
+      <polygon points="0 9, 5 0, 9 9" />
+    </clipPath>
+  </defs>
+  <image xlink:href="img/new-zealand-4.jpg" x="0" y="0" height="6.7" width="10" clip-path="url(#top)"/>
+</svg>
     </a>
     </div>
   </div>
@@ -76,6 +83,7 @@
     <img src="img/new-zealand-4.jpg" class="img-fluid" alt="Responsive image">
 </div>
 <div id="fade" class="black_overlay"></div>
+
 </body>
 <script src="js/app.js"></script>
 </html>
