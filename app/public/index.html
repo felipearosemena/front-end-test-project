@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <div class="title">
             <h1>
                 New Zealand
@@ -31,29 +31,21 @@
                 This project be tricker than it seems. Look around carefully. What you see? The sky is blue, the grass is green. The sun shines through the window.
             </p>
         </div>
-        <div class="gallery">
+        <div class="gallery" id="gallery">
             <div class="single-image img-circle">
-                <img src="img/img1.jpg" alt="Mountain Lake">
+                <img class="lightbox-image" src="img/img1.jpg" alt="Mountain Lake" data-caption="Mountain Lake">
             </div>
             <div class="single-image img-rectangle">
-                <img src="img/img2.jpg" alt="Lake">
+                <img class="lightbox-image" src="img/img2.jpg" alt="Lake" data-caption="Lake">
             </div>
             <div class="single-image">
-                <img src="img/img3.jpg" alt="Mountain">
+                <img class="lightbox-image" src="img/img3.jpg" alt="Mountain" data-caption="Mountain">
             </div>
             <div class="single-image img-triangle">
-                <img src="img/img4.jpg" alt="Sun">
+                <img class="lightbox-image" src="img/img4.jpg" alt="Sun" data-caption="Sun">
             </div>
         </div>
     </div>
-    <div id="light" class="lightbox">
-        <div class="lightbox-content">
-            <a href="#" id="close">&#x2715;</a>
-            <img id="lightbox-image" src="" alt="" />
-            <span class="lightbox-caption">This is the image caption.</span>
-        </div>
-    </div>
-    <div id="fade" class="overlay"></div>
 </body>
 <script src="/js/app.js"></script>
 
