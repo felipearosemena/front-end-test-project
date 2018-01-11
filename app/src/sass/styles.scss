@@ -20,7 +20,9 @@ body { color: white; font-family: 'Open Sans', Arial, Helvetica, sans-serif; bac
   p { font-size: 14px; text-align: justify; text-justify: inter-word; }
 }
 
-#content { position: relative; min-height: 1000px; }
+#content { position: relative; min-height: 1000px;
+  &.is-a-modal { position: inherit; }
+}
 
 #box01 { position: absolute; left: 2.5%; top: 0; bottom: 50%; right: 50%; background-color: $background-color; }
 
@@ -42,7 +44,7 @@ body { color: white; font-family: 'Open Sans', Arial, Helvetica, sans-serif; bac
   h2 { display: none; font-size: 30px}
 }
 
-.close { position: absolute; right: 0; top: 0; color: white; padding: 5px; display: none; cursor: pointer; font-size: 30px;}
+.close { position: absolute; right: 0; top: 0; color: white; padding: 5px; display: none; cursor: pointer; font-size: 40px;}
 
 
 
@@ -85,7 +87,7 @@ body { color: white; font-family: 'Open Sans', Arial, Helvetica, sans-serif; bac
 
 .show-element {
   h2 { display: block}
-  .figure { width: 80%; height: 60%; border-radius: 0; clip-path: none; background-size: cover; }
+  .figure { width: 80%; height: 70%; border-radius: 0; clip-path: none; background-size: cover; }
 }
 
 
