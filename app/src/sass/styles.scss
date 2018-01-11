@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* Variables */
+$screen-xs: 600px;
+$screen-sm: 900px;
+$screen-md: 1280px;
+$screen-lg: 1920px;
+
+$image1: '/images/1.jpg';
+$image2: '/images/2.jpg';
+$image3: '/images/3.jpg';
+$image4: '/images/4.jpg';
+
+$background-color: #24a2b0;
+
+/* Styles */
+body { color: white; font-family: 'Open Sans', Arial, Helvetica, sans-serif; background-color: $background-color; border: 0; margin: 0; padding: 0; }
+
+.logo-title { height: auto; width: 40%; margin: 50px auto;
+  h1 { line-height: 50px; margin: 0; padding: 0; text-align: center; font-size: 40px; font-weight: bold; }
+  p { font-size: 14px; text-align: justify; text-justify: inter-word; }
+}
+
+#content { position: relative; min-height: 1000px;
+  &.is-a-modal { position: inherit; }
+}
+
+#box01 { position: absolute; left: 2.5%; top: 0; bottom: 50%; right: 50%; background-color: $background-color; }
+
+#box02 { position: absolute; left: 52.5%; top: 0; bottom: 50%; right: 0; background-color: $background-color; }
+
+#box03 { position: absolute; left: 2.5%; top: 50%; bottom: 0; right: 50%; background-color: $background-color; }
+
+#box04 { position: absolute; left: 52.5%; top: 50%; bottom: 0; right: 0; background-color: $background-color; }
+
+.figure { display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; text-align: center; margin: auto; box-shadow: 0 0 2px white;
+  &.circle { width: 400px; height: 400px; -moz-border-radius: 200px; -webkit-border-radius: 200px; border-radius: 200px; background: url($image1) center center no-repeat; background-size:  150%; }
+  &.rectangle { width: 450px; height: 300px; background: url($image2) center center no-repeat; background-size:  150%;  }
+  &.square { width: 400px; height: 400px; background: url($image3) center center no-repeat; background-size:  150%; }
+  &.triangle { width: 400px; height: 400px; background: url($image4) center center no-repeat; background-size:  150%; clip-path: polygon(50% 0, 0 100%, 100% 100%);  }
+}
+
+
+.bl-box { display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; text-align: center;
+  h2 { display: none; font-size: 30px}
+}
+
+.close { position: absolute; right: 0; top: 0; color: white; padding: 5px; display: none; cursor: pointer; font-size: 40px;}
+
+
+
+/* Transitions */
+
+.expand { z-index: 1; transition: height ease-in-out 0.3s, width ease-in-out 0.3s, top ease-in-out 0.3s, bottom ease-in-out 0.3s, left ease-in-out 0.3s, right ease-in-out 0.3s; width: 100%; height: 110%; bottom: 0 !important; left: 0 !important; left: 0 !important; top: 0 !important; opacity: 1; }
+
+.item { transition: height ease-in-out 0.3s, width ease-in-out 0.3s, top ease-in-out 0.3s, left ease-in-out 0.3s, bottom ease-in-out 0.3s, right ease-in-out 0.3s, z-index ease-in-out 0.3s; width: 45%; height: 45%; }
+
+/* Scroll bar */
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+
+::-webkit-scrollbar-button {
+  &:start:decrement, &:end:increment { display: none;   }
+}
+
+::-webkit-scrollbar-track-piece { -webkit-border-radius: 6px; }
+
+::-webkit-scrollbar-thumb:vertical { -webkit-border-radius: 6px; background: #c9e2ef; }
+
+/* Conditionals */
+
+@media (max-width: $screen-sm) {
+  #box01 { position: absolute; left: 0; top: 0; }
+  #box02 { position: absolute; left: 0; top: 25%; }
+  #box03 { position: absolute; left: 0; top: 50%; }
+  #box04 { position: absolute; left: 0; top: 75%; }
+  .expand { z-index: 1; transition: height ease-in-out 0.3s, width ease-in-out 0.3s, top ease-in-out 0.3s, bottom ease-in-out 0.3s, left ease-in-out 0.3s, right ease-in-out 0.3s; width: 100%; height: 110%; bottom: 0 !important; left: 0 !important; left: 0 !important; top: 0 !important; }
+  .item { transition: height ease-in-out 0.3s, width ease-in-out 0.3s, top ease-in-out 0.3s, left ease-in-out 0.3s, bottom ease-in-out 0.3s, right ease-in-out 0.3s, z-index ease-in-out 0.3s; width: 100%; height: 25%; }
+
+  .figure {
+    &.circle { width: 200px; height: 200px; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; }
+    &.rectangle { width: 225px; height: 150px; }
+    &.square { width: 200px; height: 200px; }
+    &.triangle { width: 200px; height: 200px; }
+  }
+}
+
+
+.show-element {
+  h2 { display: block}
+  .figure { width: 80%; height: 70%; border-radius: 0; clip-path: none; background-size: cover; }
+}
+
+
+
