@@ -116,3 +116,74 @@ h1{
 	opacity: 0.85;
 	z-index: 1001;
 }
+
+@media only screen and (min-width: 2000px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .paragraph {
+        font-size: 1.5em;
+    }
+
+    .single-image {
+    	margin: 5% 2%;
+    	width: 700px;
+    	height: auto;
+    	img {
+    		width: 700px;
+    		height: 700px;
+    	}
+    }
+
+    .img-circle {
+    	clip-path: circle(350px at 350px 350px);
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .paragraph {
+        font-size: .8em;
+    }
+
+    .single-image {
+    	margin: 5% 2%;
+    	width: 300px;
+    	height: auto;
+    	img {
+    		width: 300px;
+    		height: 300px;
+    	}
+    }
+
+    .img-circle {
+    	clip-path: circle(150px at 150px 150px);
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+
+    .fullsize {
+        position: fixed;
+    	height: 45%;
+    	top: 45%;
+    	left: 50%;
+    }
+
+    .close-button {
+        width: 30px;
+    }
+
+}
+
+.single-image img:hover {
+	opacity: .5;
+}
