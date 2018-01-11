@@ -6,6 +6,9 @@ import browserify from 'browserify';
 import handlebars from 'browserify-handlebars';
 import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
+import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
+import minifycss from 'gulp-minify-css';
 
 const $ = gulploadplugins({
     lazy: true
@@ -66,6 +69,22 @@ gulp.task('serve', ['styles'], () => {
     gulp.watch(['src/sass/**/*.{scss,css}'], ['styles']);
     gulp.watch(['src/js/**/*.{js,es6,handlebars}'], ['scripts', browserSync.reload]);
 
+});
+
+// Minify JS
+gulp.task('minify-js', function () {
+  gulp.src('public/js/*.js')
+  .pipe(concat('main.min.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('public/js/'))
+});
+
+// Minify CSS
+gulp.task('minify-css', function () {
+  gulp.src('public/css/*.css')
+  .pipe(concat('main.min.css'))
+  .pipe(minifycss())
+  .pipe(gulp.dest('public/css/'))
 });
 
 // Default task
