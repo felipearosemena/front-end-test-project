@@ -28,10 +28,10 @@ gulp.task('styles', () => {
         .pipe($.autoprefixer({ browsers: ['last 10 version'] }))
         .pipe(gulp.dest('.tmp'))
         // Concatenate and minify styles if production mode (via gulp styles --production)
-        .pipe($.if('*.css' && argv.production, $.minifyCss()))
-        .pipe($.if(!argv.production,$.sourcemaps.write()))
+        .pipe($.if('*.css' && !argv.production, $.minifyCss()))
+        .pipe($.if(argv.production,$.sourcemaps.write()))
         .pipe(gulp.dest('public/css'))
-        .pipe($.if(!argv.production, browserSync.stream()))
+        .pipe($.if(argv.production, browserSync.stream()))
         .pipe($.size({title: 'styles'}));
 });
 
